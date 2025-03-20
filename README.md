@@ -1,4 +1,4 @@
-# README: Solo Leveling Chapter Scraper
+# Solo Leveling Chapter Scraper
 
 A Python script to scrape and save all chapters of the *Solo Leveling* novel from [novelsonline.org](https://www.novelsonline.org).
 
@@ -6,12 +6,12 @@ A Python script to scrape and save all chapters of the *Solo Leveling* novel fro
 
 ---
 
-## 📖 Description
+## Description
 This script automates the download of *Solo Leveling* chapters (1-270) using web scraping. It leverages multi-threading for faster processing and saves each chapter as a separate `.txt` file in a dedicated `chapters` directory. The script also cleans the content by removing ads, JavaScript messages, and sponsor notes.
 
 ---
 
-## ✨ Features
+## Features
 - **Multi-threaded scraping** for faster chapter retrieval.
 - **Automatic text cleaning** to remove unwanted content (ads, scripts, sponsor messages).
 - **Chapter organization** into individual text files.
@@ -19,14 +19,14 @@ This script automates the download of *Solo Leveling* chapters (1-270) using web
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 - Python 3.6+
 - `requests` and `beautifulsoup4` libraries
 - An internet connection
 
 ---
 
-## 🛠️ Installation
+## Installation
 1. Clone/download the script and navigate to its directory.
 2. Install dependencies:
    ```bash
@@ -39,7 +39,7 @@ This script automates the download of *Solo Leveling* chapters (1-270) using web
 
 ---
 
-## 🚀 Usage
+## Usage
 Run the script:
 ```bash
 python solo-requests.py
@@ -60,7 +60,7 @@ The cold air blew past him as Jin-Woo...
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 solo-requests/
 ├── chapters/          # Generated folder with chapter files
@@ -73,14 +73,14 @@ solo-requests/
 
 ---
 
-## 📝 Notes
+## Notes
 - The script is configured for chapters **1-270**. Modify the range in the `for` loops to adjust.
 - If blocked by the website, uncomment `time.sleep(0.5)` to throttle requests.
 - Content structure changes on the source website may require script updates.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 This script is for **educational purposes only**. Respect website terms of service and robots.txt rules. The maintainers are not responsible for misuse or legal consequences.
 
 ---
