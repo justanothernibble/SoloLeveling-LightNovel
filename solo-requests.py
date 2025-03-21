@@ -13,7 +13,7 @@ def extract_chapter_content(i):
         response = requests.get(f'https://www.novelsonline.org/solo-leveling/chapter-{i}')
         soup = BeautifulSoup(response.text, 'html.parser')
         contentsDict[i] = soup
-        # time.sleep(0.5)
+        time.sleep(0.3)
     
     
     except Exception as e:
@@ -52,6 +52,7 @@ if __name__ == "__main__":
                 # Check against unwanted strings
                 if not any(unwanted in text for unwanted in unwanted_strings):
                     paragraphs.append(text)
+                    paragraphs.append('\n')
 
         if not paragraphs:
             raise Exception('❌ No readable text found in chapter content')
